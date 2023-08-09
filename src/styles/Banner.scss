@@ -1,0 +1,19 @@
+.banner {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 250px;
+    margin: 70px 100px 40px;
+    &__picture {
+        height: 100%;
+        width: 100%;
+        object-fit: cover;
+        border-radius: 30px 30px;
+    }
+    &>h1 {
+        position: absolute;
+        z-index: 1;
+        color: white;
+        font-size: 50px;
+    }
+}

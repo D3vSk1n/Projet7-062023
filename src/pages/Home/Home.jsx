@@ -1,12 +1,8 @@
+import Banner from "../../components/Banner/Banner"
+
 function Home() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <p>
-          Edit and save to reload.
-        </p>
-      </header>
-    </div>
+    <Banner />
   );
 }
 
