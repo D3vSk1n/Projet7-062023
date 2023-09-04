@@ -10,7 +10,7 @@ function Header() {
                 <div>
                     <NavLink to="/" className={({ isActive }) =>
                     isActive ? 'header__link header__link--active' : 'header__link'}>Accueil</NavLink>
-                    <NavLink to="/nous" className={({ isActive }) =>
+                    <NavLink to="/about" className={({ isActive }) =>
                     isActive ? 'header__link header__link--active' : 'header__link'}>A Propos</NavLink>
                 </div>
             </nav>

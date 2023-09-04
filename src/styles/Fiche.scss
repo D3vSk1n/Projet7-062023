@@ -1,0 +1,29 @@
+.main-informations {
+    color: #FF6060;
+    &__title {
+        font-weight: 500;
+        font-size: 36px;
+        margin: 30px 0 0 50px;
+        width: 50%;
+    }
+    &__subtitle {
+        font-weight: 500;
+        font-size: 18px;
+        margin-top: 5px;
+        margin-left: 50px;
+    }
+    &__tags {
+        margin-top: 25px;
+        margin-left: 50px;
+    }
+}
+
+.tag {
+    color: white;
+    background-color: #FF6060;
+    border-style: none;
+    border-radius: 10px;
+    font-size: 12px;
+    margin-right: 10px;
+    padding: 5px 20px;
+}
