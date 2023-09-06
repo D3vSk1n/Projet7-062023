@@ -14,7 +14,12 @@ function Collapse({ title, paragraph }) {
                     <FontAwesomeIcon icon={faChevronUp} />
                 </button>
             <div className='collapse__paragraph'>
-                <p>{paragraph}</p>
+                {Array.isArray(paragraph) ? paragraph.map((element, index) => {
+                        return (
+                            <p key={index}>{element}</p>
+                        )
+                    }) : <p>{paragraph}</p>
+                    }
             </div>
         </div>
     ) : (

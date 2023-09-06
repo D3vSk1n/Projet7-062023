@@ -1,0 +1,14 @@
+.stars {
+    display: flex;
+    justify-content: flex-end;
+    margin-top: 30px;
+    font-size: 20px;
+    &--full {
+        margin-left: 10px;
+        color: #FF6060;
+    }
+    &--empty {
+        margin-left: 10px;
+        color: #E3E3E3
+    }
+}

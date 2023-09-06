@@ -1,0 +1,20 @@
+.host {
+    display: flex;
+    &__name {
+        color: #FF6060;
+        font-size: 18px;
+        width: 90px;
+        text-align: end;
+        margin: 10px 10px 0 0;
+    }
+    &__picture {
+        height: 64px;
+        width: 64px;
+    &>img {
+        height: 100%;
+        width: 100%;
+        object-fit: cover;
+        border-radius: 30px;
+    }
+    }
+}

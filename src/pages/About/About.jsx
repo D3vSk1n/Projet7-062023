@@ -10,13 +10,9 @@ function About() {
           <img alt="paysage côtier, bannière d'accueil" className='banner__picture' src={BannerPicture}/>
         </Banner>
           <div className="collapses">
-            {collapseData.map((collapse, index) => (
-              <Collapse
-              key={`${collapse}-${index}`}
-              title={`${collapse.title}`}
-              paragraph={`${collapse.paragraph}`} 
-              />
-            ))}
+            {collapseData.map((collapse, index) => 
+            <Collapse key={`${collapse}-${index}`} title={`${collapse.title}`} paragraph={`${collapse.paragraph}`} />
+            )}
           </div>
       </div>
     )

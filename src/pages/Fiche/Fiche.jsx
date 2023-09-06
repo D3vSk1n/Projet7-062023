@@ -3,12 +3,14 @@ import '../../styles/Fiche.scss'
 import properties from '../../datas/backEnd.js'
 import Carousel from '../../components/Carousel/Carousel.jsx'
 import Tags from '../../components/Tags/Tags.jsx'
+import Host from '../../components/Host/Host.jsx'
 import Stars from '../../components/Stars/Stars.jsx'
+import Collapse from '../../components/Collapse/Collapse'
 
 function Fiche() {
     const { idLogement } = useParams()
     const logementDetails = properties.find((property) => property.id === idLogement)
-    
+
     return (
         <div>
             <Carousel fiche={logementDetails} />
@@ -19,9 +21,13 @@ function Fiche() {
                     <Tags tagsList={logementDetails.tags} />
                 </div>
                 <div className='secondary-informations'>
-                    <p>{logementDetails.host}</p>
+                    <Host hostInfo={logementDetails.host} />
                     <Stars grade={logementDetails.rating} />
                 </div>
+            </div>
+            <div className='collapses collapses--fiche'>
+                <Collapse title='Description' paragraph={`${logementDetails.description}`} />
+                <Collapse title='Équipements' paragraph={logementDetails.equipments} />
             </div>
         </div>
     )
