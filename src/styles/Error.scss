@@ -11,9 +11,17 @@
         margin-bottom: 150px;
     }
 }
+@media all and (max-width: 768px) {
+    .error {
+        &>a {
+            font-size: 14px;
+            margin-bottom: 200px;
+        }
+    }
+}
 
 .mainbody {
-    & h1{
+    & h1 {
         display: flex;
         justify-content: center;
         font-size: 288px;
@@ -22,5 +30,23 @@
     }
     & p {
         font-size: 36px;
+        br {
+            display: none;
+        }
+    }
+}
+@media all and (max-width: 768px) {
+    .mainbody {
+        & h1 {
+            font-size: 96px;
+            margin-top: 200px;
+        }
+        & p {
+            font-size: 18px;
+            text-align: center;
+            br {
+                display: block;
+            }
+        }
     }
 }

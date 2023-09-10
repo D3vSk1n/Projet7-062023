@@ -1,4 +1,4 @@
-import { useParams } from 'react-router-dom'
+import { useParams, Navigate } from 'react-router-dom'
 import '../../styles/Fiche.scss'
 import properties from '../../datas/backEnd.js'
 import Carousel from '../../components/Carousel/Carousel.jsx'
@@ -12,7 +12,9 @@ function Fiche() {
     const logementDetails = properties.find((property) => property.id === idLogement)
 
     return (
-        <div>
+    <div className='main'>
+        {logementDetails ? (
+        <div className='logement'>
             <Carousel fiche={logementDetails} />
             <div className='informations'>
                 <div className='main-informations'>
@@ -30,6 +32,10 @@ function Fiche() {
                 <Collapse title='Équipements' paragraph={logementDetails.equipments} />
             </div>
         </div>
+        ) : (
+        <Navigate replace to="/error" />
+        )}
+    </div>
     )
 }
 

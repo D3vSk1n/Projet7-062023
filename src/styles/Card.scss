@@ -2,10 +2,18 @@
     display: flex;
     flex-flow: row wrap;
     justify-content: space-evenly;
-    margin: 0px 50px 60px;
+    margin: 0px 80px 60px;
     padding-bottom: 50px;
     background-color: #f6f6f6;
     border-radius: 30px;
+}
+@media all and (max-width: 768px) {
+    .cards {
+        margin: 0px 20px;
+        background-color: white;
+        flex-direction: column;
+        align-items: center;
+    }
 }
 
 .card {
@@ -13,7 +21,6 @@
     flex-direction: column;
     height: 340px;
     width: 340px;
-    border-radius: 30px;
     margin: 50px 0px 0px;
     position: relative;
     &__cover {
@@ -21,21 +28,38 @@
         height: 100%;
         width: 100%;
         object-fit: cover;
-        border-radius: 30px;
+        border-radius: 20px;
     }
     &__filter {
         position: absolute;
         height: 100%;
         width: 100%;
         background: linear-gradient(180deg, rgba(255, 255, 255, 0) 0%, rgba(0, 0, 0, 0.5) 100%);
-        border-radius: 30px;
+        border-radius: 20px;
     }
     &__title {
         color: white;
         position: absolute;
         left: 16px;
-        bottom: 20px;
+        bottom: 10px;
         font-size: 18px;
         width: 60%;
+    }
+}
+@media all and (max-width: 768px) { 
+    .card {
+        height: 260px;
+        width: 335px;
+        margin-top: 20px;
+        border-radius: 10px;
+        &__cover {
+            border-radius: 10px;
+        }
+        &__filter {
+            border-radius: 10px;
+        }
+        &__title {
+            bottom: 10px;
+        }
     }
 }

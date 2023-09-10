@@ -18,3 +18,17 @@
     }
     }
 }
+@media all and (max-width: 768px) {
+    .host {
+        align-items: center;
+        &__name {
+            font-size: 12px;
+            width: 50px;
+            margin-top: 0;
+        }
+        &__picture {
+            height: 32px;
+            width: 32px;
+        }    
+    }
+}

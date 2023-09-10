@@ -5,7 +5,7 @@ import collapseData from '../../datas/collapseData.js'
 
 function About() {
     return (
-      <div>
+      <div className="about">
         <Banner>
           <img alt="paysage côtier, bannière d'accueil" className='banner__picture' src={BannerPicture}/>
         </Banner>

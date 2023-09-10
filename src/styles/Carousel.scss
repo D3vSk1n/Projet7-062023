@@ -1,7 +1,7 @@
 .carousel {
     position: relative;
     height: 415px;
-    margin: 25px 50px;
+    margin: 25px 80px;
     &__optionalFunctions {
         position: absolute;
         top: 42%;
@@ -16,11 +16,27 @@
         justify-content: space-between;
         color: white;
         font-size: 65px;
-        margin: 0px 30px;
+        margin: 0px 25px;
     }
     &__count {
         color: white;
         text-align: center;
+    }
+}
+@media all and (max-width: 768px) {
+    .carousel {
+        height: 255px;
+        margin: 25px 20px 10px;
+        &__optionalFunctions {
+            top: 45%;
+        }
+        &__chevrons {
+            font-size: 25px;
+            margin: 0px 10px;
+        }
+        &__count {
+            display: none;
+        }
     }
 }
 
@@ -29,4 +45,9 @@
     width: 100%;
     object-fit: cover;
     border-radius: 30px;
+}
+@media all and (max-width: 768px) {
+    .carousel__picture {
+        border-radius: 20px;
+    }
 }

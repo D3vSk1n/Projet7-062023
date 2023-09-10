@@ -9,7 +9,7 @@ function Home() {
     <div>
       <Banner>
         <img alt="paysage côtier, bannière d'accueil" className='banner__picture' src={BannerPicture}/>
-        <h1>Chez vous, partout et ailleurs</h1>
+        <h1>Chez vous, <br /> partout et ailleurs</h1>
       </Banner>
 
       <div className="cards">
